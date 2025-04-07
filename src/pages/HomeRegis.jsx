@@ -60,7 +60,7 @@ const HomeRegis = () => {
             <div className="col-md-6 col-lg-4">
               <Link to="/gym1">
                 <div className="service-item bg-secondary rounded border border-secondary">
-                <img src="img/fitness6.jpg"className="img-fluid rounded-top w-100" alt="" />
+                  <img src="img/fitness6.jpg" className="img-fluid rounded-top w-100" alt="" />
                   <div className="px-4 rounded-bottom">
                     <div className="service-content bg-primary text-center p-3 rounded">
                       <h5 className="text-white">FitZone Gym</h5>
@@ -79,7 +79,7 @@ const HomeRegis = () => {
             <div className="col-md-6 col-lg-4">
               <Link to="/gym2">
                 <div className="service-item bg-dark rounded border border-dark">
-                <img src="img/boxing2.jpg"  className="img-fluid rounded-top w-100" alt="" />
+                  <img src="img/boxing2.jpg" className="img-fluid rounded-top w-100" alt="" />
                   <div className="px-4 rounded-bottom">
                     <div className="service-content bg-light text-center p-4 rounded">
                       <h5 className="text-primary">Elite Boxing Club</h5>
@@ -97,7 +97,7 @@ const HomeRegis = () => {
             <div className="col-md-6 col-lg-4">
               <Link to="/gym3">
                 <div className="service-item bg-primary rounded border border-primary">
-                <img src="img/yoga1.jpg"  className="img-fluid rounded-top w-100" alt="" />
+                  <img src="img/yoga1.jpg" className="img-fluid rounded-top w-100" alt="" />
                   <div className="px-4 rounded-bottom">
                     <div className="service-content bg-secondary text-center p-3 rounded">
                       <h5 className="text-white">Flex Yoga Studio</h5>
@@ -111,6 +111,7 @@ const HomeRegis = () => {
                 </div>
               </Link>
             </div>
+          
           </div>
         </div>
       </div>

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import NavbarRegis from "../component/navbarRegis";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+
 import {
   faUser,
   faPhone,
@@ -12,6 +16,7 @@ import {
 import axios from "axios";
 import "./goback.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../component/footer";
 
 const affUrl = "http://localhost:8088/api/affiliator";
 
@@ -52,7 +57,7 @@ const User = () => {
       >
         <div className="container py-5">
           <div className="p-5 bg-light rounded">
-          <button className="back-button" onClick={goBack}>&#x2039;</button>
+            <button className="back-button" onClick={goBack}>&#x2039;</button>
             <div className="row g-4">
               <div className="col-12">
                 <div className="text-center" style={{ maxWidth: "100%" }}>
@@ -98,17 +103,22 @@ const User = () => {
                     <p className="mb-2">{clientData?.affiliator_phone}</p>
                   </div>
                 </div>
-                <div className="d-flex p-4 rounded bg-white">
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    size="2x "
-                    className="text-primary me-4"
-                  />
+                <div className="d-flex p-4 rounded bg-white" style={{ marginTop: "25px" }}>
+                <FontAwesomeIcon icon={faGlobe} size="2x" className="text-primary me-4" />
+
                   <div>
                     <h4>Websites</h4>
                     {clientData?.affiliator_website?.map((url, i) => (
                       <p key={i}>{url}</p>
                     ))}
+                    <Link
+                        to="/Affiliator"
+                        target="_blank"
+                            rel="noopener noreferrer"
+                        className="btn btn-secondary text-brown"
+                      >
+                        ไปสู่หน้า Affiliator
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -160,7 +170,9 @@ const User = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+
   );
 };
 

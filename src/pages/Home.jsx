@@ -139,57 +139,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="container-fluid service py-5 ">
-        <div className="container py-5">
-          <div className="row g-4 justify-content-center">
-            <div className="col-md-6 col-lg-4">
-            <a href={isLoggedIn ? "#" : "#login"} onClick={(e) => {
-                if (!isLoggedIn) {
-                  e.preventDefault(); 
-                  alert("กรุณาล็อกอินหรือลงทะเบียนก่อนเข้าสู่บริการ");
-                }
-              }}>
-                <div className="service-item bg-secondary rounded border border-secondary">
-                  <img src="img/L.jpg" className="img-fluid rounded-top w-100" alt="" />
-                  <div className="px-4 rounded-bottom">
-                    <div className="service-content bg-primary text-center p-3 rounded">
-                      <h5 className="text-white">AquaFit Center</h5>
-                      <h6 className="mb-0">777 Charoenkrung Road, Bangkok</h6>
-                      <div className="d-flex justify-content-center align-items-center mt-2">
-                        <FontAwesomeIcon icon={faPhone} className="mb-0 text-white" style={{ marginRight: '8px' }} />
-                        <h6 className="mb-0 text-white">096-789-4321</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-md-6 col-lg-4">
-            <a href={isLoggedIn ? "#" : "#login"} onClick={(e) => {
-                if (!isLoggedIn) {
-                  e.preventDefault(); 
-                  alert("กรุณาล็อกอินหรือลงทะเบียนก่อนเข้าสู่บริการ");
-                }
-              }}>
-                <div className="service-item bg-dark rounded border border-dark">
-                  <img src="img/L.jpg" className="img-fluid rounded-top w-100" alt="" />
-                  <div className="px-4 rounded-bottom">
-                    <div className="service-content bg-light text-center p-3 rounded">
-                      <h5 className="text-primary">Groove Dance Studio</h5>
-                      <h6 className="mb-0">55 Sukhumvit Soi 11, Bangkok</h6>
-                      <div className="d-flex justify-content-center align-items-center mt-2">
-                        <FontAwesomeIcon icon={faPhone} className="mb-0 text-primary" style={{ marginRight: '8px' }} />
-                        <h6 className="mb-0 text-primary">097-222-3456</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Footer />
     </div>
   );

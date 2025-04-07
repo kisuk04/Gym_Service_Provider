@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-const registerUrl = "http://localhost:8088/register";
-
-
+const loginUrl = "http://localhost:8088/login";
 
 const Login = () => {
 
@@ -13,8 +11,6 @@ const Login = () => {
     affiliator_fname: "",
     affiliator_lname: "",
     affiliator_email: "",
-    affiliator_phone: "",
-    affiliator_website: [""],
   });
 
   const handleChange = (e) => {
@@ -34,7 +30,7 @@ const Login = () => {
         alert("กรุณากรอกข้อมูลให้ครบทุกช่องก่อนเข้าสู่ระบบ");
         return; 
       }
-      const res = await fetch(registerUrl, {
+      const res = await fetch(loginUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +42,7 @@ const Login = () => {
 
       if (res.ok) {
         console.log(result);
-        alert(`ลงทะเบียนสำเร็จ!`);
+        alert(`เข้าสู่ระบบสำเร็จ!`);
         navigate("/home");
       } else {
         console.error(result.error);
